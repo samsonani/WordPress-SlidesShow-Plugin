@@ -1,0 +1,140 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .wpss-input {
+    vertical-align: top;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wpss-gallery {
+    height: 400px;
+    border: #DFDFDF solid 1px;
+    position: relative;
+}
+
+.wpss-input .wpss-gallery-main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 2;
+}
+
+.wpss-gallery-attachments {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 48px;
+    left: 0;
+    padding: 5px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.wpss-gallery-attachment {
+    width: 12.5%;
+    float: left;
+    position: relative;
+}
+
+.wpss-gallery-toolbar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    border-top: #DFDFDF solid 1px;
+    background: #fff;
+    min-height: 28px;
+}
+
+.wpss-gallery .wpss-gallery-attachment .margin {
+    margin: 5px;
+    border: #DFDFDF solid 1px;
+    position: relative;
+    overflow: hidden;
+    background: #eee;
+}
+
+.wpss-gallery .wpss-gallery-attachment .thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(50%, 50%);
+}
+
+.wpss-gallery .wpss-gallery-attachment .thumbnail img {
+    display: block;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    transform: translate(-50%, -50%);
+}
+
+.wpss-gallery .wpss-gallery-attachment .margin:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.wpss-gallery .wpss-gallery-attachment .actions {
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wpss-gallery .wpss-gallery-attachment:hover .actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wpss-icon {
+    display: flex;
+    height: 28px;
+    width: 28px;
+    border: transparent solid 1px;
+    border-radius: 100%;
+    text-decoration: none;
+    vertical-align: top;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    background: #333 !important;
+    color: #fff !important;
+    padding-top: 1px;
+    padding-right: 1px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.wpss-icon:hover {
+    background: #d62626 !important;
+    color: #fff !important;
+}
+
+.wpss-icon span.dashicons.dashicons-remove {
+    font-size: 17px;
+    width: auto;
+    height: auto;
+}
+.attachments-wrapper .attachment.wpss-selected {
+    box-shadow: 0 0 0 3px #fff inset, 0 0 0 7px #0073aa inset !important;
+    pointer-events: none;
+}
+
+.attachments-wrapper .attachment.wpss-selected .attachment-preview:before {
+    background: rgb(212 212 212 / 65%);
+    z-index: 1;
+    position: relative;
+}
